@@ -1,0 +1,22 @@
+# bsp, stack or float
+sudo yabai --load-sa
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+yabai -m config layout bsp
+yabai -m config window_placement first_child
+yabai -m config window_topmost on
+
+# padding
+yabai -m config top_padding 5
+yabai -m config bottom_padding 5
+yabai -m config left_padding 5
+yabai -m config right_padding 5
+yabai -m config window_gap 5
+
+# mouse settings
+yabai -m config mouse_follows_focus_on
+
+# window dragged to middle of another window, swaps
+yabai -m mouse_drop_action swap
+
+# disable specific apps
+yabai -m rule --add app="^System Settings$" manage=off
