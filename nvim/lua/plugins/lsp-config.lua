@@ -17,7 +17,7 @@ return {
       require("mason-lspconfig").setup({
         ensure_installed = {
           "lua_ls",
-          "pyrefly",
+          "pyright",
           "vtsls",
           "html",
           "cssls",
@@ -38,48 +38,50 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      local lspconfig = require("lspconfig")
-      local configs = require("lspconfig.configs")
-      local util = require("lspconfig.util")
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-      -- Register pyrefly manually if needed
-      if not configs.pyrefly then
-        configs.pyrefly = {
-          default_config = {
-            cmd = { "pyrefly", "lsp" },
-            filetypes = { "python" },
-            root_dir = util.root_pattern("pyproject.toml", ".git"),
-            settings = {},
-          },
-        }
-      end
-
       -- Lua
-      lspconfig.lua_ls.setup({ capabilities = capabilities })
+      vim.lsp.enable("lua_ls")
+      vim.lsp.config("lua_ls", {
+        capabilities = capabilities,
+      })
 
-      -- Python using pyrefly
-      lspconfig.pyrefly.setup({
+      -- Python using pyright
+      vim.lsp.enable("pyright")
+      vim.lsp.config("pyright", {
         capabilities = capabilities,
         settings = {
           python = {
-            checkOnType = true,
-            diagnostics = true,
-            inlayHints = true,
-            smartCompletion = true,
+            analysis = {
+              typeCheckingMode = "basic", -- or "strict" for more checking
+              autoSearchPaths = true,
+              useLibraryCodeForTypes = true,
+              diagnosticMode = "workspace",
+              autoImportCompletions = true,
+            },
           },
         },
       })
 
       -- Web/JS/TS
-      lspconfig.vtsls.setup({ capabilities = capabilities })
-      lspconfig.html.setup({ capabilities = capabilities })
-      lspconfig.cssls.setup({ capabilities = capabilities })
-      lspconfig.jsonls.setup({ capabilities = capabilities })
-      lspconfig.eslint.setup({ capabilities = capabilities })
+      vim.lsp.enable("vtsls")
+      vim.lsp.config("vtsls", { capabilities = capabilities })
+
+      vim.lsp.enable("html")
+      vim.lsp.config("html", { capabilities = capabilities })
+
+      vim.lsp.enable("cssls")
+      vim.lsp.config("cssls", { capabilities = capabilities })
+
+      vim.lsp.enable("jsonls")
+      vim.lsp.config("jsonls", { capabilities = capabilities })
+
+      vim.lsp.enable("eslint")
+      vim.lsp.config("eslint", { capabilities = capabilities })
 
       -- Go
-      lspconfig.gopls.setup({
+      vim.lsp.enable("gopls")
+      vim.lsp.config("gopls", {
         capabilities = capabilities,
         settings = {
           gopls = {
@@ -93,13 +95,21 @@ return {
       })
 
       -- YAML / SQL / Docker / Markdown
-      lspconfig.yamlls.setup({ capabilities = capabilities })
-      lspconfig.sqlls.setup({ capabilities = capabilities })
-      lspconfig.dockerls.setup({ capabilities = capabilities })
-      lspconfig.marksman.setup({ capabilities = capabilities })
+      vim.lsp.enable("yamlls")
+      vim.lsp.config("yamlls", { capabilities = capabilities })
+
+      vim.lsp.enable("sqlls")
+      vim.lsp.config("sqlls", { capabilities = capabilities })
+
+      vim.lsp.enable("dockerls")
+      vim.lsp.config("dockerls", { capabilities = capabilities })
+
+      vim.lsp.enable("marksman")
+      vim.lsp.config("marksman", { capabilities = capabilities })
 
       -- Typst
-      lspconfig.tinymist.setup({
+      vim.lsp.enable("tinymist")
+      vim.lsp.config("tinymist", {
         capabilities = capabilities,
         settings = {
           exportPdf = "onSave",
@@ -109,7 +119,8 @@ return {
       })
 
       -- Bash
-      lspconfig.bashls.setup({ capabilities = capabilities })
+      vim.lsp.enable("bashls")
+      vim.lsp.config("bashls", { capabilities = capabilities })
 
       -- Diagnostics UI
       vim.diagnostic.config({
