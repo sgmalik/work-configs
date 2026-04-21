@@ -60,9 +60,6 @@ return {
 				},
 			})
 
-			vim.keymap.set("n", "<leader>e", "<Cmd>Neotree filesystem reveal left toggle<CR>", {
-				desc = "Toggle Neo-tree filesystem sidebar",
-			})
 		end,
 	},
 }

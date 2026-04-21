@@ -32,7 +32,6 @@ return {
           "bashls",
         },
       })
-      vim.keymap.set("n", "<leader>m", ":Mason<CR>", {})
     end,
   },
   {
@@ -40,20 +39,33 @@ return {
     config = function()
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-      -- Lua
+      -- Lua (with Neovim runtime so vim.* API autocompletes in config files)
       vim.lsp.enable("lua_ls")
       vim.lsp.config("lua_ls", {
         capabilities = capabilities,
+        settings = {
+          Lua = {
+            runtime = { version = "LuaJIT" },
+            workspace = {
+              checkThirdParty = false,
+              library = vim.api.nvim_get_runtime_file("", true),
+            },
+            telemetry = { enable = false },
+            diagnostics = {
+              globals = { "vim" },
+            },
+          },
+        },
       })
 
-      -- Python using pyright
+      -- Python
       vim.lsp.enable("pyright")
       vim.lsp.config("pyright", {
         capabilities = capabilities,
         settings = {
           python = {
             analysis = {
-              typeCheckingMode = "basic", -- or "strict" for more checking
+              typeCheckingMode = "basic",
               autoSearchPaths = true,
               useLibraryCodeForTypes = true,
               diagnosticMode = "workspace",
@@ -86,9 +98,7 @@ return {
         settings = {
           gopls = {
             gofumpt = true,
-            analyses = {
-              unusedparams = true,
-            },
+            analyses = { unusedparams = true },
             staticcheck = true,
           },
         },
@@ -128,6 +138,13 @@ return {
         signs = true,
         update_in_insert = false,
         severity_sort = true,
+      })
+
+      -- Auto-format on save
+      vim.api.nvim_create_autocmd("BufWritePre", {
+        callback = function(args)
+          vim.lsp.buf.format({ bufnr = args.buf, async = false })
+        end,
       })
     end,
   },

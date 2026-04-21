@@ -29,6 +29,9 @@ return {
 			-- Find Files and Grep
 			{ "<leader>f", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
 			{ "<leader>/", "<cmd>Telescope live_grep<cr>", desc = "Live Grep" },
+			{ "<leader>e", "<Cmd>Neotree filesystem reveal left toggle<CR>", desc = "Toggle Neo-tree" },
+			{ "<leader>l", ":Lazy<CR>", desc = "Lazy" },
+			{ "<leader>m", ":Mason<CR>", desc = "Mason" },
 
 			-- Code group
 			{ "<leader>c", group = "Code" },
@@ -42,19 +45,11 @@ return {
 			},
 			{ "<leader>cs", ":set spell!<cr>", desc = "Toggle Spell Check" },
 			{ "<leader>cr", vim.lsp.buf.rename, desc = "Rename" },
-			{ "<leader>cf", vim.lsp.buf.format, desc = "Format" },
+			{ "<leader>cf", function() vim.lsp.buf.format({ async = true }) end, desc = "Format" },
 			{ "<leader>ci", vim.lsp.buf.implementation, desc = "Go to Implementation" },
 			{ "<leader>ct", vim.lsp.buf.type_definition, desc = "Type Definition" },
 			-- { "<leader>cs", vim.lsp.buf.signature_help, desc = "Signature Help" },
 			{ "<leader>cp", "<cmd>MarkdownPreviewToggle<cr>", desc = "Markdown Preview" },
-
-      -- Quarto
-      { "<leader>q", group = "Quarto" },
-      { "<leader>qp", "<cmd>QuartoPreview<cr>", desc = "Preview Quarto" },
-      { "<leader>qs", "<cmd>QuartoStop<cr>", desc = "Stop Preview" },
-      { "<leader>qe", "<cmd>QuartoSendAbove<cr>", desc = "Execute Above" },
-      { "<leader>qc", "<cmd>QuartoSendCode<cr>", desc = "Execute Chunk" },
-      { "<leader>qa", "<cmd>QuartoSendAll<cr>", desc = "Execute All" },
 
 			-- Buffer management
 			{ "<leader>b", group = "Buffer" },
@@ -93,16 +88,14 @@ return {
 			{ "<leader>w>", "<C-W>>", desc = "Increase Width" },
 			{ "<leader>w<", "<C-W><", desc = "Decrease Width" },
 
-			-- Update your git group in which-key config
+			-- Git
 			{ "<leader>g", group = "Git" },
 			{ "<leader>gg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
-			{ "<leader>gs", "<cmd>terminal git status<cr>", desc = "Git Status" },
-			{ "<leader>ga", "<cmd>terminal git add .<cr>", desc = "Git Add All" },
-			{ "<leader>gc", "<cmd>terminal git commit<cr>", desc = "Git Commit" },
-			{ "<leader>gp", "<cmd>terminal git push<cr>", desc = "Git Push" },
-			{ "<leader>gl", "<cmd>terminal git log<cr>", desc = "Git Log" },
-			{ "<leader>gd", "<cmd>terminal git diff<cr>", desc = "Git Diff" },
 			{ "<leader>gf", "<cmd>LazyGitFilterCurrentFile<cr>", desc = "LazyGit Current File" },
+			{ "<leader>gd", "<cmd>DiffviewOpen<cr>", desc = "Diffview Open" },
+			{ "<leader>gh", "<cmd>DiffviewFileHistory %<cr>", desc = "File History (current)" },
+			{ "<leader>gH", "<cmd>DiffviewFileHistory<cr>", desc = "File History (repo)" },
+			{ "<leader>gx", "<cmd>DiffviewClose<cr>", desc = "Diffview Close" },
 
 			-- Search operations
 			{ "<leader>s", group = "Search" },
