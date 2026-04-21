@@ -148,13 +148,13 @@ wezterm.on('update-status', function(window, pane)
 
     local cells = {}
 
-    -- Figure out the hostname of the pane on a best-effort basis
-    local hostname = wezterm.hostname()
-    local cwd_uri = pane:get_current_working_dir()
-    if cwd_uri and cwd_uri.host then
-        hostname = cwd_uri.host
-    end
-    table.insert(cells, ' ' .. hostname)
+    -- -- Figure out the hostname of the pane on a best-effort basis
+    -- local hostname = wezterm.hostname()
+    -- local cwd_uri = pane:get_current_working_dir()
+    -- if cwd_uri and cwd_uri.host then
+    --     hostname = cwd_uri.host
+    -- end
+    -- table.insert(cells, ' ' .. hostname)
 
     -- Format date/time in this style: "Wed Mar 3 08:14"
     local date = wezterm.strftime ' %a %b %-d %H:%M'
