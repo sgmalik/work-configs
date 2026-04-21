@@ -124,6 +124,19 @@ return {
 			{ "<leader>xn", vim.diagnostic.goto_next, desc = "Next Diagnostic" },
 			{ "<leader>xp", vim.diagnostic.goto_prev, desc = "Previous Diagnostic" },
 			{ "<leader>xl", vim.diagnostic.setloclist, desc = "Diagnostic List" },
+
+			-- Pi (AI Agent)
+			{ "<leader>p", group = "Pi" },
+			{ "<leader>pp", function() vim.cmd("Pi layout=side") end, desc = "Open Side Panel", mode = { "n", "v" } },
+			{ "<leader>pf", function() vim.cmd("Pi layout=float") end, desc = "Open Float", mode = { "n", "v" } },
+			{ "<leader>pl", "<Cmd>PiToggleLayout<CR>", desc = "Toggle Layout", mode = { "n", "v" } },
+			{ "<leader>pc", "<Cmd>PiContinue<CR>", desc = "Continue Last Session", mode = { "n", "v" } },
+			{ "<leader>pr", "<Cmd>PiResume<CR>", desc = "Resume Past Session", mode = { "n", "v" } },
+			{ "<leader>pm", "<Cmd>PiSendMention<CR>", desc = "Mention File/Selection", mode = { "n", "v" } },
+			{ "<leader>pa", "<Cmd>PiAttention<CR>", desc = "Open Attention Request", mode = { "n", "v" } },
+			{ "<leader>ps", "<Cmd>PiAbort<CR>", desc = "Stop/Abort Agent", mode = { "n", "v" } },
+			{ "<leader>pq", "<Cmd>PiToggleChat<CR>", desc = "Close/Toggle Chat", mode = { "n", "v" } },
+			{ "<leader>pS", "<Cmd>PiStop<CR>", desc = "Stop Pi Process", mode = { "n", "v" } },
 		})
 	end,
 }
