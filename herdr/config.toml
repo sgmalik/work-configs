@@ -1,0 +1,48 @@
+onboarding = false
+[theme]
+name = "dracula"
+
+auto_switch = false
+[keys]
+prefix = "ctrl+b"
+
+# Tabs
+new_tab    = "prefix+c"
+rename_tab = "prefix+comma"
+switch_tab = "prefix+1..9"
+
+# Workspaces
+switch_workspace   = "prefix+shift+1..9"
+previous_workspace = "prefix+["
+next_workspace     = "prefix+]"
+
+# Splits
+split_vertical   = "prefix+|"      # pane to the right
+split_horizontal = "prefix+minus"  # pane below
+
+# Pane focus
+focus_pane_left  = "prefix+h"
+focus_pane_down  = "prefix+j"
+focus_pane_up    = "prefix+k"
+focus_pane_right = "prefix+l"
+
+# Pane management
+zoom       = "prefix+m"
+close_pane = "prefix+x"
+copy_mode  = "prefix+v"
+
+# Agents
+next_agent     = "prefix+a"
+previous_agent = "prefix+shift+a"
+
+# Pane resize
+resize_pane_left  = "prefix+left"
+resize_pane_down  = "prefix+down"
+resize_pane_up    = "prefix+up"
+resize_pane_right = "prefix+right"
+
+[ui.sound]
+enabled = true
+
+[ui.toast]
+delivery = "herdr"

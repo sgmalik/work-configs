@@ -1,0 +1,4 @@
+2026-08-08T16:28:38.390708Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=19251
+2026-08-08T16:28:38.390908Z  INFO herdr::client: connecting to server path=/Users/sm-syc/.config/herdr/herdr-client.sock
+2026-08-08T16:28:38.623140Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-08T16:29:05.850712Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=19251

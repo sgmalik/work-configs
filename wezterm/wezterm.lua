@@ -194,11 +194,10 @@ end)
 
 -- ============================================================
 -- LEADER KEY
--- Karabiner maps:  tap left_command (alone) → Ctrl+B
--- This is your tmux prefix, now the WezTerm leader.
--- Held left_command → Cmd+Ctrl+Opt (super, for yabai) — no conflict.
+-- Karabiner maps:  hold super + w → CMD+CTRL+ALT+w (WezTerm leader)
+-- Tap super alone → ctrl+b (herdr prefix) — no conflict.
 -- ============================================================
-config.leader = { key = 'b', mods = 'CTRL', timeout_milliseconds = 1000 }
+config.leader = { key = 'w', mods = 'CMD|CTRL|ALT', timeout_milliseconds = 1000 }
 
 -- ============================================================
 -- KEY BINDINGS
