@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-08-27T09:14:37-04:00",
+  "transaction_id": "",
+  "elapsed": "1m5.338072833s",
+  "input": {
+    "transaction_id": "",
+    "test_timeout_seconds": 900,
+    "operations": null
+  },
+  "output": {
+    "transaction_id": "",
+    "success": true,
+    "operations": [],
+    "diagnostics": {
+      "build_ok": true,
+      "test_status": "passed",
+      "test_summary": "ok  \tgithub.com/Sycamore/Tools/apps/sarge",
+      "command_run": "cd /Users/sm-syc/Sycamore/Tools/apps/sarge \u0026\u0026 go build ./... \u0026\u0026 go test ./...",
+      "scope": "entire_workspace (./...)",
+      "output_summary": "ok  \tgithub.com/Sycamore/Tools/apps/sarge",
+      "note": "Verified full workspace build and test suite via 'go build ./... \u0026\u0026 go test ./...'. All packages passed."
+    }
+  }
+}
+{
+  "timestamp": "2026-08-27T09:14:46-04:00",
+  "transaction_id": "",
+  "elapsed": "1.197911458s",
+  "input": {
+    "transaction_id": "",
+    "test_timeout_seconds": 900,
+    "operations": null
+  },
+  "output": {
+    "transaction_id": "",
+    "success": true,
+    "operations": [],
+    "diagnostics": {
+      "build_ok": true,
+      "test_status": "passed",
+      "test_summary": "ok  \tgithub.com/Sycamore/Tools/apps/sarge",
+      "command_run": "cd /Users/sm-syc/Sycamore/Tools/apps/sarge \u0026\u0026 go build ./... \u0026\u0026 go test ./...",
+      "scope": "entire_workspace (./...)",
+      "output_summary": "ok  \tgithub.com/Sycamore/Tools/apps/sarge",
+      "note": "Verified full workspace build and test suite via 'go build ./... \u0026\u0026 go test ./...'. All packages passed."
+    }
+  }
+}

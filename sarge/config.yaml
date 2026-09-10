@@ -1,0 +1,14 @@
+watch_roots:
+    - /Users/sm-syc/.pi
+    - /Users/sm-syc/Sycamore/s-caf
+    - /Users/sm-syc/Sycamore/Tools
+tasks_doc: ~/Sycamore/Tools/projects.md
+show_pi_output: false
+require_clean_dir: true
+create_git_branch: true
+require_clean_tests: true
+git_rollback_on_fail: true
+auto_launch_logs_viewer: true
+hide_startup_notice: false
+pi_overhead: 5000
+ctx_len_ceiling: 0

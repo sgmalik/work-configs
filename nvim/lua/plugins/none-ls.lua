@@ -13,7 +13,6 @@ return {
           "isort",
           "prettier",
           "goimports",
-          "shellcheck",
         },
         automatic_installation = true,
       })
@@ -51,9 +50,6 @@ return {
           -- Go
           null_ls.builtins.formatting.gofmt,
           null_ls.builtins.formatting.goimports,
-
-          -- Bash
-          null_ls.builtins.diagnostics.shellcheck,
         },
       })
     end,

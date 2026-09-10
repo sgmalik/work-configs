@@ -32,12 +32,7 @@
                                     "key_code": "g",
                                     "modifiers": { "mandatory": ["left_command", "left_control", "left_option"] }
                                 },
-                                "to": [
-                                    {
-                                        "key_code": "g",
-                                        "modifiers": ["left_control"]
-                                    }
-                                ],
+                                "to": [{ "key_code": "g", "modifiers": ["left_control"] }],
                                 "type": "basic"
                             }
                         ]
@@ -286,23 +281,6 @@
                         "product_id": 0,
                         "vendor_id": 0
                     }
-                },
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "is_pointing_device": true,
-                        "product_id": 4624,
-                        "vendor_id": 13364
-                    },
-                    "ignore": false
-                },
-                {
-                    "identifiers": {
-                        "is_pointing_device": true,
-                        "product_id": 53288,
-                        "vendor_id": 13364
-                    },
-                    "ignore": false
                 }
             ],
             "name": "Default",

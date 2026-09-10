@@ -1,0 +1,99 @@
+time=2026-08-27T17:17:28.963-04:00 level=INFO msg="dupe ingest: start" project=42
+time=2026-08-27T17:17:28.964-04:00 level=INFO msg="dupe ingest: done" project=42
+time=2026-08-27T17:17:28.965-04:00 level=INFO msg="dupe ingest: start" project=42
+time=2026-08-27T17:17:28.966-04:00 level=INFO msg="dupe ingest: done" project=42
+time=2026-08-27T17:17:28.968-04:00 level=INFO msg="dupe ingest: start" project=42
+time=2026-08-27T17:17:28.969-04:00 level=INFO msg="dupe ingest: done" project=42
+time=2026-08-27T17:17:28.976-04:00 level=INFO msg="dupe search" q=login n=10 hits=10 shown=2 stale=2 took=0s
+time=2026-08-27T17:17:28.976-04:00 level=INFO msg="── login [Hybrid] ───────────────────────────────"
+time=2026-08-27T17:17:28.976-04:00 level=INFO msg=" #3      PORT - login example              score ██████████████████████ 0.01639  cos ░░░░░░░░░░░░░░░░░░░░░░ 0.000"
+time=2026-08-27T17:17:28.976-04:00 level=INFO msg=" #7      Crash on login                    score ██████████████████████ 0.01613  cos ░░░░░░░░░░░░░░░░░░░░░░ 0.000"
+time=2026-08-27T17:17:28.976-04:00 level=INFO msg=" #8      Portal login broken               score █████████████████████░ 0.01587  cos ░░░░░░░░░░░░░░░░░░░░░░ 0.000"
+time=2026-08-27T17:17:28.976-04:00 level=INFO msg=" #2      PORT: login folder moves          score █████████████████████░ 0.01562  cos ░░░░░░░░░░░░░░░░░░░░░░ 0.000"
+time=2026-08-27T17:17:28.976-04:00 level=INFO msg=" #10     [PORT] Uppercase login port       score █████████████████████░ 0.01538  cos ░░░░░░░░░░░░░░░░░░░░░░ 0.000"
+time=2026-08-27T17:17:28.976-04:00 level=INFO msg=" #1      Port: Programs and login depende  score ████████████████████░░ 0.01515  cos ░░░░░░░░░░░░░░░░░░░░░░ 0.000"
+time=2026-08-27T17:17:28.976-04:00 level=INFO msg=" #5      Port for Springfield login fix    score ████████████████████░░ 0.01493  cos ░░░░░░░░░░░░░░░░░░░░░░ 0.000"
+time=2026-08-27T17:17:28.976-04:00 level=INFO msg=" #6      Port to Release: login task       score ████████████████████░░ 0.01471  cos ░░░░░░░░░░░░░░░░░░░░░░ 0.000"
+time=2026-08-27T17:17:28.976-04:00 level=INFO msg=" #9      [Port] login error is thrown      score ███████████████████░░░ 0.01449  cos ░░░░░░░░░░░░░░░░░░░░░░ 0.000"
+time=2026-08-27T17:17:28.976-04:00 level=INFO msg=" #4      Port from 4.3.2.1: login auth     score ███████████████████░░░ 0.01429  cos ░░░░░░░░░░░░░░░░░░░░░░ 0.000"
+time=2026-08-27T17:17:28.976-04:00 level=INFO msg=""
+time=2026-08-27T17:17:28.983-04:00 level=ERROR msg="dupe row refresh" id=10 err="assert.AnError general error for testing"
+time=2026-08-27T17:17:28.989-04:00 level=INFO msg="dupe scan: needles" project=7 since=2026-05-29T17:17:28 count=3
+time=2026-08-27T17:17:28.989-04:00 level=INFO msg="dupe scan: sentence hashes" docs=5 took=0s
+time=2026-08-27T17:17:28.989-04:00 level=INFO msg="dupe scan: boilerplate" sentences=0 total_docs=5 texts=[]
+time=2026-08-27T17:17:28.989-04:00 level=INFO msg="dupe scan: overlap pair" needle=1 hit=10 cosine=0 overlap=0 sentences=[]
+time=2026-08-27T17:17:28.989-04:00 level=INFO msg="dupe scan: pair" a=1 b=10 cosine=0 overlap=0 via=overlap
+time=2026-08-27T17:17:28.989-04:00 level=INFO msg="dupe scan: done" project=7 needles=3 pairs=1
+time=2026-08-27T17:17:28.992-04:00 level=INFO msg="dupe scan: needles" project=7 since=2026-05-29T17:17:28 count=2
+time=2026-08-27T17:17:28.992-04:00 level=INFO msg="dupe scan: sentence hashes" docs=2 took=0s
+time=2026-08-27T17:17:28.992-04:00 level=INFO msg="dupe scan: boilerplate" sentences=0 total_docs=2 texts=[]
+time=2026-08-27T17:17:28.992-04:00 level=INFO msg="dupe scan: overlap pair" needle=1 hit=10 cosine=0 overlap=0 sentences=[]
+time=2026-08-27T17:17:28.992-04:00 level=INFO msg="dupe scan: overlap pair" needle=10 hit=1 cosine=0 overlap=0 sentences=[]
+time=2026-08-27T17:17:28.992-04:00 level=INFO msg="dupe scan: done" project=7 needles=2 pairs=0
+time=2026-08-27T17:17:28.994-04:00 level=INFO msg="dupe scan: needles" project=7 since=2026-05-29T17:17:28 count=0
+time=2026-08-27T17:17:28.994-04:00 level=INFO msg="dupe scan: sentence hashes" docs=0 took=0s
+time=2026-08-27T17:17:28.994-04:00 level=INFO msg="dupe scan: boilerplate" sentences=0 total_docs=0 texts=[]
+time=2026-08-27T17:17:28.994-04:00 level=INFO msg="dupe scan: done" project=7 needles=0 pairs=0
+time=2026-08-27T17:17:28.995-04:00 level=INFO msg="dupe scan: needles" project=7 since=2026-05-29T17:17:28 count=1
+time=2026-08-27T17:17:28.995-04:00 level=INFO msg="dupe scan: sentence hashes" docs=2 took=0s
+time=2026-08-27T17:17:28.995-04:00 level=INFO msg="dupe scan: boilerplate" sentences=0 total_docs=2 texts=[]
+time=2026-08-27T17:17:28.995-04:00 level=INFO msg="dupe scan: overlap pair" needle=1 hit=10 cosine=0 overlap=0 sentences=[]
+time=2026-08-27T17:17:28.995-04:00 level=INFO msg="dupe scan: done" project=7 needles=1 pairs=0
+time=2026-08-27T17:17:28.996-04:00 level=INFO msg="dupe scan: needles" project=7 since=2026-05-29T17:17:28 count=1
+time=2026-08-27T17:17:28.996-04:00 level=INFO msg="dupe scan: sentence hashes" docs=2 took=0s
+time=2026-08-27T17:17:28.996-04:00 level=INFO msg="dupe scan: boilerplate" sentences=0 total_docs=2 texts=[]
+time=2026-08-27T17:17:28.997-04:00 level=INFO msg="dupe scan: overlap pair" needle=1 hit=10 cosine=0 overlap=0 sentences=[]
+time=2026-08-27T17:17:28.997-04:00 level=INFO msg="dupe scan: pair" a=1 b=10 cosine=0 overlap=0 via=overlap
+time=2026-08-27T17:17:28.997-04:00 level=INFO msg="dupe scan: done" project=7 needles=1 pairs=1
+time=2026-08-27T17:17:28.997-04:00 level=INFO msg="dupe scan: needles" project=7 since=2026-05-29T17:17:28 count=1
+time=2026-08-27T17:17:28.998-04:00 level=INFO msg="dupe scan: sentence hashes" docs=1 took=0s
+time=2026-08-27T17:17:28.998-04:00 level=INFO msg="dupe scan: boilerplate" sentences=0 total_docs=1 texts=[]
+time=2026-08-27T17:17:28.999-04:00 level=INFO msg="dupe scan: overlap pair" needle=1 hit=10 cosine=0 overlap=0 sentences=[]
+time=2026-08-27T17:17:28.999-04:00 level=INFO msg="dupe scan: pair" a=1 b=10 cosine=0 overlap=0 via=overlap
+time=2026-08-27T17:17:28.999-04:00 level=INFO msg="dupe scan: complete" pairs=1
+time=2026-08-27T17:17:29.008-04:00 level=INFO msg="dupe scan: needles" project=8 since=2026-05-29T17:17:29 count=1
+time=2026-08-27T17:17:29.008-04:00 level=INFO msg="dupe scan: sentence hashes" docs=2 took=0s
+time=2026-08-27T17:17:29.008-04:00 level=INFO msg="dupe scan: boilerplate" sentences=0 total_docs=2 texts=[]
+time=2026-08-27T17:17:29.008-04:00 level=INFO msg="dupe scan: overlap pair" needle=1 hit=10 cosine=0 overlap=0 sentences=[]
+time=2026-08-27T17:17:29.008-04:00 level=INFO msg="dupe scan: pair" a=1 b=10 cosine=0 overlap=0 via=overlap
+time=2026-08-27T17:17:29.008-04:00 level=INFO msg="dupe scan: done" project=8 needles=1 pairs=1
+time=2026-08-27T17:17:29.010-04:00 level=INFO msg="dupe scan: needles" project=9 since=2026-05-29T17:17:29 count=1
+time=2026-08-27T17:17:29.010-04:00 level=INFO msg="dupe scan: sentence hashes" docs=2 took=0s
+time=2026-08-27T17:17:29.010-04:00 level=INFO msg="dupe scan: boilerplate" sentences=0 total_docs=2 texts=[]
+time=2026-08-27T17:17:29.011-04:00 level=INFO msg="dupe scan: overlap pair" needle=1 hit=10 cosine=0 overlap=0 sentences=[]
+time=2026-08-27T17:17:29.011-04:00 level=INFO msg="dupe scan: done" project=9 needles=1 pairs=0
+time=2026-08-27T17:17:29.013-04:00 level=INFO msg="dupe scan: needles" project=9 since=2026-05-29T17:17:29 count=3
+time=2026-08-27T17:17:29.013-04:00 level=INFO msg="dupe scan: sentence hashes" docs=3 took=0s
+time=2026-08-27T17:17:29.013-04:00 level=INFO msg="dupe scan: boilerplate" sentences=0 total_docs=3 texts=[]
+time=2026-08-27T17:17:29.013-04:00 level=INFO msg="dupe scan: done" project=9 needles=3 pairs=0
+time=2026-08-27T17:17:29.020-04:00 level=INFO msg="dupe ingest: pre-linked requests" linked=1 checked=2
+time=2026-08-27T17:17:29.024-04:00 level=INFO msg="API query project backlog page" took=864.708µs
+time=2026-08-27T17:17:29.025-04:00 level=INFO msg="API query assignees for 2 items" took=122.417µs
+time=2026-08-27T17:17:29.025-04:00 level=INFO msg="API query project backlog page" took=521.792µs
+time=2026-08-27T17:17:29.025-04:00 level=INFO msg="API query assignees for 1 items" took=185.292µs
+time=2026-08-27T17:17:29.026-04:00 level=INFO msg="API query project backlog page" took=431.917µs
+time=2026-08-27T17:17:29.026-04:00 level=INFO msg="API query assignees for 3 items" took=84µs
+time=2026-08-27T17:17:29.026-04:00 level=INFO msg="API resolve Project \"My Project\"" took=400.333µs
+time=2026-08-27T17:17:29.161-04:00 level=INFO msg="mine off"
+time=2026-08-27T17:17:29.161-04:00 level=INFO msg="mine on"
+time=2026-08-27T17:17:29.195-04:00 level=INFO msg="config loaded" domain=sycamoreinformatics.tpondemand.com
+time=2026-08-27T17:17:29.214-04:00 level=INFO msg="config loaded" domain=sycamoreinformatics.tpondemand.com
+time=2026-08-27T17:17:29.275-04:00 level=INFO msg="API query Bug" took=1.35725ms
+time=2026-08-27T17:17:29.276-04:00 level=INFO msg="API query Bug" took=146.75µs
+time=2026-08-27T17:17:29.276-04:00 level=INFO msg="API query assignees for 2 items" took=118.792µs
+time=2026-08-27T17:17:29.276-04:00 level=INFO msg="API query Bug" took=105.083µs
+time=2026-08-27T17:17:29.276-04:00 level=INFO msg="API query Bug" took=97.833µs
+time=2026-08-27T17:17:29.276-04:00 level=INFO msg="API query assignees for 2 items" took=92.125µs
+time=2026-08-27T17:17:29.277-04:00 level=INFO msg="API query Bug" took=637.084µs
+time=2026-08-27T17:17:29.277-04:00 level=INFO msg="API query assignees for 3 items" took=93.583µs
+time=2026-08-27T17:17:29.278-04:00 level=INFO msg="API query Bug" took=627.583µs
+time=2026-08-27T17:17:29.279-04:00 level=INFO msg="API query assignees for 251 items" took=1.132833ms
+time=2026-08-27T17:17:29.280-04:00 level=INFO msg="API query project options" took=579.041µs
+time=2026-08-27T17:17:29.281-04:00 level=INFO msg="API query team options" took=781.167µs
+time=2026-08-27T17:17:29.281-04:00 level=INFO msg="API query iteration options" took=701.042µs
+time=2026-08-27T17:17:29.282-04:00 level=INFO msg="API query state options" took=740.666µs
+time=2026-08-27T17:17:29.283-04:00 level=INFO msg="filter change" filter=beta
+time=2026-08-27T17:17:29.284-04:00 level=INFO msg="filter clear"
+time=2026-08-27T17:17:29.284-04:00 level=INFO msg="filter change" filter=beta
+time=2026-08-27T17:17:29.284-04:00 level=INFO msg="filter change" filter=alpha
+time=2026-08-27T17:17:29.284-04:00 level=INFO msg="filter change" filter=beta

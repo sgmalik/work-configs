@@ -1,0 +1,9 @@
+time=2026-08-19T09:58:36.200-04:00 level=INFO msg="config loaded" domain=sycamoreinformatics.tpondemand.com search_mode=""
+time=2026-08-19T09:58:36.844-04:00 level=INFO msg="API load logged user" took=642.451042ms
+time=2026-08-19T09:58:37.115-04:00 level=INFO msg="API query Bug" took=267.88125ms
+time=2026-08-19T09:58:37.365-04:00 level=INFO msg="API query assignees for 34 items" took=249.453583ms
+time=2026-08-19T09:58:37.530-04:00 level=INFO msg="API load Bug 223952 detail" took=154.786ms
+time=2026-08-19T09:58:37.587-04:00 level=INFO msg="qmd exec" cmd="qmd collection list" output="" duration=210ms err="exit status 1"
+time=2026-08-19T09:58:37.587-04:00 level=INFO msg="qmd ensure_index" duration=211ms err="qmd collection list: exit status 1"
+time=2026-08-19T09:58:52.682-04:00 level=INFO msg=search query=kronk mode=semantic
+time=2026-08-19T09:59:11.013-04:00 level=INFO msg=search query=221197 mode=semantic

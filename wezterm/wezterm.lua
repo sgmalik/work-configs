@@ -273,6 +273,16 @@ config.keys = {
 
     -- Copy mode (vim visual selection) ── leader + v
     { key = 'v', mods = 'LEADER', action = act.ActivateCopyMode },
+
+    -- Resize pane ── leader + arrow keys
+    { key = 'LeftArrow',  mods = 'LEADER', action = act.AdjustPaneSize { 'Left',  5 } },
+    { key = 'RightArrow', mods = 'LEADER', action = act.AdjustPaneSize { 'Right', 5 } },
+    { key = 'UpArrow',    mods = 'LEADER', action = act.AdjustPaneSize { 'Up',    5 } },
+    { key = 'DownArrow',  mods = 'LEADER', action = act.AdjustPaneSize { 'Down',  5 } },
+
+    -- cli-snippets picker ── leader + s
+    -- sends Alt+s (\ es) to the terminal, triggering the _cs_pick zsh widget
+    { key = 's', mods = 'LEADER', action = act.SendString('\x1bs') },
 }
 
 return config
